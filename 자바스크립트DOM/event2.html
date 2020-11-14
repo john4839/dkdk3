@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+
+</head>
+<body>
+    <textarea id="text"></textarea>
+    <div id="qwer">0</div>
+    <script>
+        let text = document.getElementById('text')
+        let qwer = document.getElementById('qwer')
+        text.onkeyup=function() {
+            qwer.innerText = text.value.length;
+        }
+
+    </script>
+    
+</body>
+</html>
